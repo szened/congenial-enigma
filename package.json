@@ -1,0 +1,32 @@
+{
+  "name": "congenial-enigma",
+  "version": "0.1.0",
+  "description": "An 11ty project with Netlify from scratch",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch src/sass:public/css",
+    "build:sass": "sass src/sass:public/css" ,
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy"   ,
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szened/congenial-enigma.git"
+  },
+  "keywords": [],
+  "author": "Szened Radman <dev@szened.com> (https://szened.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szened/congenial-enigma/issues"
+  },
+  "homepage": "https://github.com/szened/congenial-enigma#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.54.9"
+  }
+}
