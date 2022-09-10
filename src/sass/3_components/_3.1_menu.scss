@@ -1,0 +1,7 @@
+@use "sass:math";
+@use "../1_abstracts" as *;
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+}

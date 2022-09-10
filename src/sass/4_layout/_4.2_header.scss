@@ -1,0 +1,11 @@
+@use "sass:math";
+@use "../1_abstracts" as *;
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+}

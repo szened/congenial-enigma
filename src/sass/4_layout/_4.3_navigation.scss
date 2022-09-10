@@ -1,0 +1,41 @@
+@use "sass:math";
+@use "../1_abstracts" as *;
+
+
+nav.primary-navigation {
+  background-color: aqua;
+  
+
+  ul {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    margin: .2em;
+  }
+
+  a {
+    display: inline-block;
+    outline: 2px dotted aqua;
+    padding: .4em;
+    margin: .4em;
+
+    color: blue;
+  }
+
+
+  a:visited {
+  
+  }
+  
+  a:focus {
+    background-color: rgb(183, 0, 255);
+  }
+  
+  a:hover {
+    background-color: aqua;
+  }
+  
+  a:active {
+  
+  }
+}

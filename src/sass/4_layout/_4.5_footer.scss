@@ -1,0 +1,9 @@
+@use "sass:math";
+@use "../1_abstracts" as *;
+
+
+footer {
+  display: grid;
+  place-items: center;
+  background-color: #333;
+}

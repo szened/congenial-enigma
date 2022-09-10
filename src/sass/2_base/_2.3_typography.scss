@@ -1,0 +1,149 @@
+@use "sass:math";
+@use "../1_abstracts" as *;
+
+
+
+
+
+/* TYPOGRAPHY */
+
+/* --------------------- Paragraph --------------------- */
+
+/***********************************************
+* l1 PARAGRAPH
+***********************************************/
+
+/* This allows for important words "keywords" to appear embedded in any kind of text, not just in headings. */
+/* One h1 per page or <section> */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  /* inherited from the <body> */
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: greenyellow;
+}
+
+/* Optimal paragraph width */
+/* .paragraph {width: clamp(40ch, 99%, 60ch);} */
+/* Optimal heading width */
+/* .heading {width: clamp(15ch, 99%, 40ch);} */
+
+
+/***********************************************
+* HEADINGS
+***********************************************/
+
+
+/* !: <hgroup> should not be used because no assistive technology supports it, and as a result it has a detrimental effect on assistance for headings placed within it. */
+hgroup {
+  background-color: inherit;
+}
+
+
+/***********************************************
+* HEADINGS | Web style
+***********************************************/
+
+  /* Don’t hyphenate Headings, and avoid breaking proper&#160;names over two lines if possible. */
+  /* To "Proper Names" (like: John Doe) use &#160; NON-BREAKING SPACE instead of regular spaces */
+  .heading-1,
+  .heading-2,
+  .heading-3,
+  .heading-4,
+  .heading-5,
+  .heading-6 {
+    font-weight: bold;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* Never hyphenate within a headline. When line breaks are needed, break at the end of a phrase. */
+    hyphens: none; 
+
+    /* padding: 0.4em 0 0.2em; */
+    line-height: 1;
+  }
+
+  /* Main Heading (usually the h1-element) */
+  .heading-1 {
+    font-size: calc(2rem + 2vw);
+    text-transform: uppercase;
+  }
+
+  .heading-2 {
+    font-size: calc(1rem + 2vw);
+    text-transform: uppercase;
+  }
+
+  .heading-3 {
+    font-size: calc(1rem + 1vw);
+    text-transform: uppercase;
+  }
+
+    /* tags, legal texts, */
+  .heading-4 {
+    font-size: calc(1rem + 0.5vw);
+    text-transform: uppercase;
+  }
+
+    /* tags, legal texts, */
+  .heading-5 {
+    font-size: calc(1rem + 0.3vw);
+    text-transform: uppercase;
+  }
+
+    /* tags, legal texts, */
+  .heading-6 {
+    font-size: calc(1rem + 0.1vw);
+    text-transform: uppercase; 
+  }
+
+
+/***********************************************
+* HEADINGS | Newspaper style - similar to printing
+***********************************************/
+
+  .headline {
+    font-size: calc(4rem + 3vw);
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    hyphens: none;
+  }
+
+  /* Styles below are not declared properly yet */
+
+  .title {
+    font-size: calc(3rem + 2vw);
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    hyphens: none;
+  }
+
+  .subtitle {
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+    line-height: 1;
+    hyphens: none;
+  }
+
+  .label {
+    font-size: calc(1.1rem + 0.4vw);
+    text-transform: uppercase;
+  }
+
+  .caption {
+    font-size: calc(0.8rem + 0.1vw);
+  }
+
+  .tag {
+    font-size: calc(0.8rem + 0.1vw);
+    text-transform: uppercase; 
+    font-family: inherit;
+  }
