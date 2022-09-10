@@ -1,0 +1,10 @@
+<!-- From: 11ty Netlify Jumpstart  -->
+<nav class="primary-navigation">
+  <ul>
+    {% for page in collections.pages %}
+    <li>
+      <a href="{{ page.url }}">{{ page.data.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
