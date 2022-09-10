@@ -13,18 +13,14 @@ nav.primary-navigation {
     margin: .2em;
   }
 
-  a {
+  a, 
+  a:visited {
     display: inline-block;
     outline: 2px dotted aqua;
     padding: .4em;
     margin: .4em;
 
     color: blue;
-  }
-
-
-  a:visited {
-  
   }
   
   a:focus {
@@ -36,6 +32,6 @@ nav.primary-navigation {
   }
   
   a:active {
-  
+    color: brown;
   }
 }
